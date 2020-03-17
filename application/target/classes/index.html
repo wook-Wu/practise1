@@ -1,0 +1,51 @@
+﻿<html>
+ <head> 
+  <link rel="stylesheet" href="./css/www.lookcos.cn.css" /> 
+  <script src="./js/jquery.min.js"></script> 
+  <script src="./js/www.lookcos.cn.js"></script> 
+ </head> 
+ <body scroll="no">
+ <div id="bg" ></div>
+ <div id="clock">
+   <p style="color:fffaf0;" class="time">距离2020年CPA考试仅有</p>
+   <script type="text/javascript">
+		var myDate = new Date();
+		var	nowyear=myDate.getFullYear()+1;
+		document.getElementById('te').innerHTML=nowyear; 
+	</script> 
+   <p class="date"> </p>
+   <div class="clock" style="margin:2em;"></div> 
+   <p></p> 
+   <p><font face="arial" color="red"></font></p>
+   <p class="Author"><font face="arial" color="red"></font></p>
+   <p></p> 
+  </div>
+
+ <script type="text/javascript">
+     function next()
+     {
+         n = Math.floor(Math.random()*window.bgcount)
+         $("#bg").css("background-image","url(./img/bg"+n+".jpg)");
+         console.log("bg " + n);
+     }
+ </script>
+  <script type="text/javascript">
+		
+		
+			var clock;
+
+			$(document).ready(function() {
+				var myDate = new Date();
+				var	year=2020,month=3,day=6;
+				<!--var	year=myDate.getFullYear()+1,month=10,day=12;-->
+				var currentDate = new Date();
+				var futureDate = new Date(year, month-1, day, 8.5); 
+				var diff = futureDate.getTime() / 1000 - currentDate.getTime() / 1000;
+				clock = $('.clock').FlipClock(diff, {
+					clockFace: 'DailyCounter',
+					countdown: true
+				});
+			});
+		</script>  
+ </body>
+</html>

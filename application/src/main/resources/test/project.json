@@ -1,0 +1,24 @@
+{
+	"contentrating" : "Everyone",
+	"description" : "自己无聊时候做的考研倒计时壁纸...\r\n有什么需要改进的地方可以留言...",
+	"file" : "index.html",
+	"general" : 
+	{
+		"properties" : 
+		{
+			"schemecolor" : 
+			{
+				"order" : 0,
+				"text" : "ui_browse_properties_scheme_color",
+				"type" : "color",
+				"value" : "0.6784313725490196 0.8470588235294118 0.9019607843137255"
+			}
+		}
+	},
+	"preview" : "preview.jpg",
+	"tags" : [ "Landscape" ],
+	"title" : "2021考研倒计时",
+	"type" : "web",
+	"visibility" : "public",
+	"workshopid" : "1885502061"
+}
