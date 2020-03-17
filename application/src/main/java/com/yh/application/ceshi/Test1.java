@@ -9,6 +9,7 @@ import java.util.concurrent.CountDownLatch;
 public class Test1 {
 
     public static void main(String[] args) {
+        System.out.println("还好");
         ArrayList<Integer>  list =new ArrayList<>();
         for (int i =0; i<313;i++){
             list.add(i);
